@@ -7,7 +7,7 @@ const GalleryCard = ({ section }: { section: string }) => {
       className="col-span-3 md:col-span-2 bg-white dark:bg-gray-900
 			 rounded-3xl text-gray-600 dark:text-gray-300 aspect-2/1 pb-4 md:pb-0 flex relative overflow-hidden"
       whileHover="groupHover"
-      animate={{ opacity: ["all"].includes(section) ? 1 : 1 }}
+      animate={{ opacity: ["all", "about"].includes(section) ? 1 : 0.3 }}
       variants={{
         groupHover: {
           scale: 1.01,
